@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+
+  "name": "Last.fm RYM links",
+  "author": "Michael Lai",
+  "description": "Puts RYM links in last.fm",
+  "version": "1.0",
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.last.fm/*"],
+      "exclude_matches": [],
+      "css": ["lastfmrym.css"],
+      "js": ["lastfmrym.js"],
+      "run_at": "document_end"
+    }
+  ]
+}
